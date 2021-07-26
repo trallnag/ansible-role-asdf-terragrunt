@@ -1,0 +1,17 @@
+argument_specs:
+  main:
+    short_description: Main entry point for the "{{ role_name }}" role
+    options:
+      asdf_terragrunt_version:
+        default: 0.31.1
+        type: raw
+        required: false
+        description: >-
+          Terraform version to install and activate globally.
+
+      asdf_terragrunt_git_url:
+        default: https://github.com/lotia/asdf-terragrunt
+        type: raw
+        required: false
+        description: >-
+          Git repo containing the plugin.

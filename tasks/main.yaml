@@ -1,0 +1,12 @@
+- name: Check if tool in the correct version is installed
+  shell: |
+    if [ "$(terragrunt --version | head -n 1)" != "terragrunt version v{{ asdf_terragrunt_version }}" ]; then
+      echo status=changed
+    fi
+  register: task
+  changed_when: "'status=changed' in task.stdout"
+  notify:
+    - "{{ role_name }} : Add plugin"
+    - "{{ role_name }} : Install package"
+    - "{{ role_name }} : Set global"
+    - "{{ role_name }} : Check version"

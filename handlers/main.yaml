@@ -1,0 +1,14 @@
+- name: Add plugin
+  shell: asdf plugin-add terragrunt {{ asdf_terragrunt_git_url }} || true
+
+- name: Install package
+  shell: asdf install terragrunt {{ asdf_terragrunt_version }} || true
+
+- name: Set global
+  shell: asdf global terragrunt {{ asdf_terragrunt_version }} || true
+
+- name: Check version
+  shell: |
+    if [ "$(terragrunt --version | head -n 1)" != "terragrunt version v{{ asdf_terragrunt_version }}" ]; then
+      exit 1
+    fi
