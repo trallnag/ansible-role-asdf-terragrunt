@@ -1,6 +1,6 @@
-[![role](https://img.shields.io/ansible/role/55779)](https://galaxy.ansible.com/trallnag/asdf_terragrunt)
-[![quality](https://img.shields.io/ansible/quality/55779)](https://galaxy.ansible.com/trallnag/asdf_terragrunt)
-[![downloads](https://img.shields.io/ansible/role/d/55779?label=downloads)](https://galaxy.ansible.com/trallnag/asdf_terragrunt)
+[![role](https://img.shields.io/ansible/role/55781)](https://galaxy.ansible.com/trallnag/asdf_terragrunt)
+[![quality](https://img.shields.io/ansible/quality/55781)](https://galaxy.ansible.com/trallnag/asdf_terragrunt)
+[![downloads](https://img.shields.io/ansible/role/d/55781?label=downloads)](https://galaxy.ansible.com/trallnag/asdf_terragrunt)
 
 # Ansible Role `trallnag.asdf_terragrunt`
 
